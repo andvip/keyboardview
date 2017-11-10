@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c_007aff">#007Aff</color>
+    <color name="c_c2c2c2">#c2c2c2</color>
+    <color name="c_c5c5c5">#C5C5C5</color>
+    <color name="c_e1e1e1">#E1E1E1</color>
+    <color name="white">#ffffff</color>
+    <string name="app_name">keyboardview</string>
+    <style mce_bogus="1" name="KeyoBoardAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/down_to_up</item>
+        <item name="android:windowExitAnimation">@anim/up_to_hide</item>
+    </style>
+    <style name="numberSpecialStyle" parent="numberStyleBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/key_number_special_bg</item>
+    </style>
+    <style name="numberStyle" parent="numberStyleBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/key_number_bg</item>
+    </style>
+    <style name="numberStyle2" parent="numberStyleBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/key_number_bg</item>
+    </style>
+    <style name="numberStyleBase">
+        <item name="android:layout_margin">0.5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>
