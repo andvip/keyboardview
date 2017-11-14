@@ -98,7 +98,12 @@ public class KeyboardView extends PopupWindow implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        int start = mEditText.getSelectionStart();
+        editable = mEditText.getText();
+        int start = 0;
+        if (editable.length() > 0) {
+            mEditText.setSelection(editable.length());
+            start = mEditText.getSelectionStart();
+        }
         int i = view.getId();
         if (i == R.id.tv100) {
             editable.clear();
